@@ -1,0 +1,154 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-size: cover;
+}
+
+header {
+  padding: 20px;
+  background-color: forestgreen;
+}
+
+header .header-line {
+  display: flex;
+  align-items: center;
+}
+
+header .header-wrapper {
+  color: white;
+  display: flex;
+  width: calc(100% - 70px);
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .img-che{
+  transform: scale(2.5);
+  border-radius: 50px;
+  width: 5%;
+  padding: 20 0 0;
+}
+
+h1,h2,
+a,
+.title,
+.right-side-title,
+.right-side-h2 {
+  align-items: center;
+  font-family: Montserrat, sans-serif;
+}
+
+main .title {
+  /* font-size: 80; */
+  width: 100%;
+  background: url('./images/angel.jpg');
+  font-family: Montserrat, sans-serif;
+  /* text-align: center; */
+  /* padding: 0 0 0 80; */
+  /* margin: 0 0 0 0; */
+}
+
+main .block1,
+.block2,
+.block3,
+.block4 {
+  display: flex;
+}
+
+main .block1 {
+  background-color: lightgreen;
+}
+
+main .block2 {
+  background-color: lightblue;
+}
+
+main .block3 {
+  background-color: lightcoral;
+  padding: 10;
+  text-align: justify;
+  justify-content: space-between;
+}
+
+main .block4 {
+  background-color: aquamarine;
+}
+
+main .text1-left,
+.text1-right {
+  /* display: list-item; */
+  width: 50%;
+}
+
+main .block3-text-left,
+.block3-text-right,
+.block3-h1,
+.block4-left,
+.block4-center,
+.block4-right {
+  width: 33%;
+}
+
+.block3-h1 {
+  padding: 90 0;
+}
+
+.block4-left,
+.block4-center,
+.block4-right {
+  display: list-item;
+}
+
+main .imag {
+  width: 50%;
+  height: 30%;
+}
+
+footer {
+  background-color: cadetblue;
+  /* display: flex; */
+}
+footer .footer-menu {
+  display: flex;
+  height: 160px;
+}
+
+.nav,.nav-header {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  width: 30%;
+  padding: 0 150
+}
+
+.nav{
+  display: grid;
+}
+
+a {
+  font-size: 20px;
+  margin: 0 20px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.social-wrapper {
+  position: absolute;
+  width: 40px;
+  height: 150px;
+  right: 20;
+  padding: 10 30;
+}
+
+.social {
+  height: 30;
+  width: 30;
+  cursor: pointer;
+  margin-bottom: 7;
+}
+
+.cprt {
+  width: 100%;
+  padding: 0 600;}
