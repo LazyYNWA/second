@@ -3,6 +3,8 @@ body {
   height: 100vh;
   margin: 0;
   background-size: cover;
+  background: url(./images/Архип\ Куинджи\ -\ Эльбрус.\ Лунная\ ночь..jpg);
+  background-attachment: fixed;
 }
 
 header, .title, .block1, .block2, .block3, .block4, footer{
@@ -10,19 +12,24 @@ header, .title, .block1, .block2, .block3, .block4, footer{
 }
 
 header {
-  padding: 20px;
-  background-color: forestgreen;
+  /* padding: 20px; */
+  background-color: #607d8b;
+  height: 90px;
 }
 
 header .header-line {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
-.size {
-  max-width: 1024px;
-  width: 100%;
-  margin: 0 auto;
+header .button-menu {
+  display: none;
+  width: 0px;
+  padding: 20px;
+}
+header .button-menu img {
+  width: 30px;
 }
 
 header .header-wrapper {
@@ -30,48 +37,67 @@ header .header-wrapper {
   display: flex;
   width: calc(100% - 70px);
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 
 header .img-che {
-  transform: scale(1.1);
-  border-radius: 50px;
-  width: 5%;
-  padding: 20 0 0;
+  /* transform: scale(1.1); */
+  border-radius: 90px;
+  width: 140px;
+  margin-top: 14px;
+  /* padding: 20 0 0; */
+  /* margin-top: 30px; */
 }
 
 header .img-che:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
   transition-property: rgb(39, 54, 104);
 }
 
 header a:hover
 {
-  text-decoration: underline;
-  color: greenyellow;
+  /* text-decoration: underline; */
+  color: whitesmoke;
 }
 
 footer a:hover
 {
-  text-decoration: underline;
-  color: greenyellow;
+  /* text-decoration: underline; */
+  color: whitesmoke;
+}
+
+main .title {
+  /* background: url('./images/angel.jpg'); */
+  background: url('./images/never-give-up.png') no-repeat;
+  /* background-attachment: fixed; */
+  font-family: Montserrat, sans-serif;
+  height: 330px;
+  background-size: cover;
+  text-shadow: 2px 2px rgb(44 255 177 / 90%);
+}
+
+.size {
+  max-width: 1024px;
+  /* height: calc(100% - 130px); */
+  height: 100%;
+  width: 100%;
+  /* margin: 0 auto; */
+  padding: 130px 0 0 20px;
 }
 
 h1,
 h2,
 a,
 p,
-.title,
+/* .title, */
 .right-side-title,
 .right-side-h2 {
   align-items: center;
   font-family: Montserrat, sans-serif;
 }
-
-main .title {
-  background: url('./images/angel.jpg');
-  font-family: Montserrat, sans-serif;
-  height: 300px;
+h1 {
+  margin-top: 0px;
+  padding-top: 10px;
 }
 
 main .block1,
@@ -79,7 +105,7 @@ main .block1,
 .block3,
 .block4 {
   display: flex;
-  margin: 20px auto;
+  margin: 30px auto;
   padding: 20px;
   border-radius: 20px;
 }
@@ -128,14 +154,23 @@ main .image {
   height: 30%;
   margin: 20px;
 }
+main .imag {
+  width: 50%;
+}
+/* main block1, block2 .image {
+  /* width: 50%; */
+  /* height: 30%; */
+  /* margin: 20px; */
+} */
 
 footer {
   background-color: cadetblue;
+  height: 100%;
 }
 
 footer .footer-menu {
   display: flex;
-  height: 160px;
+  height: 130px;
 }
 
 .nav-footer,
@@ -143,7 +178,7 @@ footer .footer-menu {
   font-family: Montserrat, sans-serif;
   font-weight: 600;
   width: 30%;
-  padding: 0 150px
+  padding: 10px 150px
 }
 
 .nav-footer {
@@ -152,7 +187,8 @@ footer .footer-menu {
 
 a {
   font-size: 20px;
-  margin: 0 20px;
+  /* margin: 0 20px; */
+  padding: 20px;
   line-height: 1.5;
   font-weight: 600;
   color: #ffffff;
@@ -178,24 +214,50 @@ a {
   text-align: center;
 }
 
-@media (min-width: 600px) and (max-width: 1000px) {
+@media (min-width: 480px) and (max-width: 768px) {
   body {
     background-color: grey;
   }
-}
-
-@media (min-width: 100px) and (max-width: 600px) {
-  body {
-    background-color: rgb(42, 94, 107);
+  .img-che {
+    transform: scale(0.5);
+    width: 10%;
   }
 }
 
+@media screen and (max-width: 480px) {
+  body {
+      background-color: rgb(42, 94, 107);
+    }
+  
+    main .title {
+      background: url('./images/angel.jpg');
+    }
+
+    .img-che, .nav-header {
+      display: none;
+      width: 0px;
+    }
+    .block1, .block2, .block3, .block4{
+      display: block;
+    }
+
+    header .button-menu {
+      display: block;
+      margin: 8px 0px;
+      cursor: pointer;
+      width: 30px;
+    }
+    
+}
+
+
 body a:link, a:visited, a:hover {
-  color: #0e3f12;
+  color: #1b074b;
 }
 body .arrow-up {
+  display: none;
   font-size: 15px; 
-  float: right;
+  /* float: right; */
   color: #0e3f12;
 }
 body .arrow-up:hover {
