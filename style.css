@@ -143,7 +143,7 @@ main .block3-text-left,
 }
 
 main .block3-center{
-  /* display: contents; */ /* for height: fit-content; */
+  /* display: contents; */ /* I need this comment! for height: fit-content; */
   display: inline-grid;
 }
 
@@ -157,7 +157,7 @@ main .imag {
   width: 50%;
 }
 main .image-block3{
-  /* height: fit-content; */ /* for display: contents; */
+  /* height: fit-content; */ /* I need this comment! for display: contents; */
   width: 70%;
   justify-self: center;
 }
@@ -224,6 +224,7 @@ a {
   body {
     background-color: grey;
   }
+
   .img-che {
     transform: scale(0.5);
     width: 10%;
