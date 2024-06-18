@@ -12,7 +12,6 @@ header, .title, .block1, .block2, .block3, .block4, footer{
 }
 
 header {
-  /* padding: 20px; */
   background-color: #607d8b;
   height: 90px;
 }
@@ -37,16 +36,14 @@ header .header-wrapper {
   display: flex;
   width: calc(100% - 70px);
   justify-content: space-between;
-  /* align-items: center; */
 }
 
 header .img-che {
-  /* transform: scale(1.1); */
-  border-radius: 90px;
-  width: 140px;
+  border-radius: 100px;
+  width: 100px;
   margin-top: 14px;
-  /* padding: 20 0 0; */
-  /* margin-top: 30px; */
+  margin-top: 20px;
+  transition: 1s;
 }
 
 header .img-che:hover {
@@ -56,32 +53,28 @@ header .img-che:hover {
 
 header a:hover
 {
-  /* text-decoration: underline; */
   color: whitesmoke;
 }
 
 footer a:hover
 {
-  /* text-decoration: underline; */
   color: whitesmoke;
 }
 
 main .title {
-  /* background: url('./images/angel.jpg'); */
-  background: url('./images/never-give-up.png') no-repeat;
-  /* background-attachment: fixed; */
+  background: url('./images/Радуга.jpg') no-repeat;
   font-family: Montserrat, sans-serif;
-  height: 330px;
+  height: 270px;
   background-size: cover;
   text-shadow: 2px 2px rgb(44 255 177 / 90%);
+  width: 100%;
+  margin: 0 auto;
 }
 
 .size {
   max-width: 1024px;
-  /* height: calc(100% - 130px); */
-  height: 100%;
   width: 100%;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   padding: 130px 0 0 20px;
 }
 
@@ -89,15 +82,23 @@ h1,
 h2,
 a,
 p,
-/* .title, */
 .right-side-title,
 .right-side-h2 {
   align-items: center;
   font-family: Montserrat, sans-serif;
 }
+
+p {
+  text-indent: 20px;
+}
+
 h1 {
   margin-top: 0px;
-  padding-top: 10px;
+  padding-top: 170px;
+}
+
+h1, h2 {
+  text-align: center;
 }
 
 main .block1,
@@ -108,77 +109,77 @@ main .block1,
   margin: 30px auto;
   padding: 20px;
   border-radius: 20px;
-}
-
-main .block1 {
-  background-color: lightgreen;
-}
-
-main .block2 {
-  background-color: lightblue;
+  background:  radial-gradient(farthest-corner at 50% 50%, white, #2d5d80);
 }
 
 main .block3 {
-  background-color: rgb(77, 177, 207);
   padding: 10;
   text-align: justify;
   justify-content: space-between;
 }
 
-main .block4 {
-  background-color: aquamarine;
-}
-
 main .text1-left,
 .text1-right {
   width: 50%;
-  text-align: center;
+}
+
+main .block1-text1{
+  display: flex;
+  flex-direction: column;
 }
 
 main .block3-text-left,
+.block3-center,
 .block3-text-right,
 .block3-h1,
 .block4-left,
 .block4-center,
 .block4-right {
   width: 33%;
-  text-align: center;
 }
 
 .block3-h1 {
   padding: 90 0;
 }
 
-main .image {
-  width: 50%;
-  height: 30%;
-  margin: 20px;
+main .block3-center{
+  /* display: contents; */ /* for height: fit-content; */
+  display: inline-grid;
 }
+
+main .image {
+  width: 70%;
+  margin: 20px 0 20px;
+  padding: 0px 70px;
+}
+
 main .imag {
   width: 50%;
 }
-/* main block1, block2 .image {
-  /* width: 50%; */
-  /* height: 30%; */
-  /* margin: 20px; */
-} */
+main .image-block3{
+  /* height: fit-content; */ /* for display: contents; */
+  width: 70%;
+  justify-self: center;
+}
 
 footer {
-  background-color: cadetblue;
-  height: 100%;
+  background-color: #607d8b;
+  height: 200px;
 }
 
 footer .footer-menu {
   display: flex;
-  height: 130px;
+  height: 160px;
 }
 
 .nav-footer,
 .nav-header {
   font-family: Montserrat, sans-serif;
   font-weight: 600;
-  width: 30%;
-  padding: 10px 150px
+  width: calc(50% - 70px);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-footer {
@@ -187,12 +188,16 @@ footer .footer-menu {
 
 a {
   font-size: 20px;
-  /* margin: 0 20px; */
-  padding: 20px;
+  padding: 7px;
   line-height: 1.5;
   font-weight: 600;
   color: #ffffff;
   text-decoration: none;
+}
+
+.block4-center a:visited{
+  font-size: 10px; 
+  color: #607d8b;
 }
 
 .social-wrapper {
@@ -214,6 +219,7 @@ a {
   text-align: center;
 }
 
+
 @media (min-width: 480px) and (max-width: 768px) {
   body {
     background-color: grey;
@@ -230,7 +236,7 @@ a {
     }
   
     main .title {
-      background: url('./images/angel.jpg');
+      background: url('./images/Kuindzhi_Early_spring_1890_1895.jpg');
     }
 
     .img-che, .nav-header {
@@ -250,17 +256,63 @@ a {
     
 }
 
-
 body a:link, a:visited, a:hover {
   color: #1b074b;
 }
+
 body .arrow-up {
   display: none;
   font-size: 15px; 
-  /* float: right; */
   color: #0e3f12;
 }
+
 body .arrow-up:hover {
   text-decoration: underline;
   color: rgb(131, 9, 9);
 }
+
+
+table {
+  border-collapse: collapse; 
+  line-height: 1.1;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  background:  radial-gradient(farthest-corner at 50% 50%, white, #2d5d80);
+  color: #0C213B;
+  margin: 30px auto;
+}
+
+caption {
+  font-family: annabelle, cursive;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 10px; 
+  text-shadow: 1px 1px rgb(44 255 177 / 90%);
+ }
+
+th {
+  padding: 10px; 
+  border: 1px solid #A9E2CC;
+}
+
+td {
+  font-size: 0.8em;
+  padding: 5px 7px;
+  border: 1px solid #A9E2CC;
+}
+
+.first {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+}
+
+table .image-table{
+  max-width: 104px; 
+  transition: 1s;
+}
+
+table .image-table:hover {
+  transform: scale(1.5); 
+  cursor: move;
+ }
